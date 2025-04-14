@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BEM VINDO A JOÃO FERRAGENS</h1>
+    <form action="/cadastrar-produto" method="POST">
+        <label for="productName">Nome do Produto:</label><br>
+        <input type="text" id="productName" name="productName" required><br><br>
+        <section id="Nome do Produto">
+            <option value="">--selecione um produto</option>
+            <option value="parafuso">parafuso</option>
+            <option value="martelo">martelo</option>
+            <option value="chave de fenda">chave de fenda</option>
+            <option value="serrote">serrote</option>
+        </section>
+    
+        <label for="productPrice">Preço (R$):</label><br>
+        <input type="number" id="productPrice" name="productPrice" step="0.01" required><br><br>
+
+        <label for="productQuantity">Quantidade:</label><br>
+        <input type="number" id="productQuantity" name="productQuantity" required><br><br>
+
+        <button onclick="Adicionaraocarrinho"()>Adicionar ao carrinho</button>
+        <button onclick="calcularpreco"()></button>
+    
+        <button type="submit">Cadastrar Produto</button>
+      </form>
+</body>
+</html>
