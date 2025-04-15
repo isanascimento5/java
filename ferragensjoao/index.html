@@ -7,27 +7,25 @@
 </head>
 <body>
     <h1>BEM VINDO A JOÃO FERRAGENS</h1>
-    <form action="/cadastrar-produto" method="POST">
-        <label for="productName">Nome do Produto:</label><br>
-        <input type="text" id="productName" name="productName" required><br><br>
-        <section id="Nome do Produto">
-            <option value="">--selecione um produto</option>
+       <label for="productName">Nome do Produto:</label>
+        <select id="produto">
+            <option value="">selecione o produto</option>
             <option value="parafuso">parafuso</option>
             <option value="martelo">martelo</option>
             <option value="chave de fenda">chave de fenda</option>
-            <option value="serrote">serrote</option>
-        </section>
     
-        <label for="productPrice">Preço (R$):</label><br>
-        <input type="number" id="productPrice" name="productPrice" step="0.01" required><br><br>
+        </select>
 
-        <label for="productQuantity">Quantidade:</label><br>
-        <input type="number" id="productQuantity" name="productQuantity" required><br><br>
+        <label for="Quantidade">Quantidade</label>
+        <input type="number" id="Quantidade" name="Quantidade" min="1" step="1" value="1"><br><br>
 
-        <button onclick="Adicionaraocarrinho"()>Adicionar ao carrinho</button>
-        <button onclick="calcularpreco"()></button>
+
+    
+
+        <button onclick="p()">Adicionar ao carrinho</button>
     
         <button type="submit">Cadastrar Produto</button>
       </form>
+      <script src="script.js"></script>
 </body>
 </html>
