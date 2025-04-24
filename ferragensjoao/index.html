@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>BEM VINDO A JOÃO FERRAGENS</h1>
-       <label for="productName">Nome do Produto:</label>
+       <label for="produto">Produto:</label>
         <select id="produto">
-            <option value="">selecione o produto</option>
-            <option value="parafuso">parafuso</option>
-            <option value="martelo">martelo</option>
-            <option value="chave de fenda">chave de fenda</option>
-    
+        <option value="">selecione o produto</option>
+        <option value="parafuso">parafuso</option>
+        <option value="martelo">martelo</option>
+        <option value="chave de fenda">chave de fenda</option>
         </select>
 
+
         <label for="Quantidade">Quantidade</label>
-        <input type="number" id="Quantidade" name="Quantidade" min="1" step="1" value="1"><br><br>
-
-
-    
-
-        <button onclick="p()">Adicionar ao carrinho</button>
-    
-        <button type="submit">Cadastrar Produto</button>
-      </form>
+        <input type="number" id="Quantidade" min="0" placeholder="Quantidade" ><br><br>
+<label for="">ESTOQUE</label>
+        <button onclick="calcularPrecos()">Adicionar ao carrinho</button>
+        <h4 id="resultado"></h4>
       <script src="script.js"></script>
 </body>
 </html>
