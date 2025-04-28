@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><style class="css"></style></title>
 </head>
 
 <body>
-    <h1>BEM VINDO A JOÃO FERRAGENS</h1>
-       <label for="produto">Produto:</label>
+    <body>
+        <h1>BEM VINDO À JOÃO FERRAGENS</h1>
+        
+        <label for="produto">Produto:</label>
         <select id="produto">
-        <option value="">selecione o produto</option>
-        <option value="parafuso">parafuso</option>
-        <option value="martelo">martelo</option>
-        <option value="chave de fenda">chave de fenda</option>
-        </select>
-
-
-        <label for="Quantidade">Quantidade</label>
-        <input type="number" id="Quantidade" min="0" placeholder="Quantidade" ><br><br>
-<label for="">ESTOQUE</label>
-        <button onclick="calcularPrecos()">Adicionar ao carrinho</button>
+            <option value="">Selecione o produto</option>
+            <option value="parafuso">Parafuso</option>
+            <option value="martelo">Martelo</option>
+            <option value="chave de fenda">Chave de Fenda</option>
+        </select><br><br>
+    
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" min="1" placeholder="Quantidade" required><br><br>
+    
+        <label for="estoque">Estoque:</label>
+        <input type="number" id="estoque" value="100" readonly><br><br>
+    
+        <button onclick="calcularPreco()">Adicionar</button>
+    
         <h4 id="resultado"></h4>
-      <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
