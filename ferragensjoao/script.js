@@ -31,10 +31,14 @@ function calcularPreco() {
     // Mostrar o resultado
 
     document.getElementById('resultado').innerText = `Total: R$ ${precoTotal.toFixed(2)}`;
-    if(
-        
-    )
+    
+    if (estoque[produto] < quantidade) {
+        document.getElementById('resultado').innerText = `Estoque insuficiente! Temos apenas ${estoque[produto]} unidades de ${produto}.`;
+        document.getElementById('estoqueRestante').innerText = '';
+        return;
+    }
 
 
-
+    document.getElementById('resultado').innerText = `Total: R$ ${precoTotal.toFixed(2)}`;
+    document.getElementById('estoqueRestante').innerText = `Estoque restante de ${produto}: ${estoque[produto]}`;
 }
