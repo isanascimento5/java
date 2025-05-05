@@ -22,10 +22,15 @@
         <input type="number" id="quantidade" min="1" placeholder="Quantidade" required><br><br>
     
         <label for="estoque">Estoque:</label>
-        <input type="number" id="estoque" value="100" readonly><br><br>
+
+        <input type="number" id="estoque" value="0" readonly><br><br>
+
+        <button onclick="calcularPreco()">comprar</button>
+
+
+      
     
-        <button onclick="calcularPreco()">Adicionar</button>
-    
+
         <h4 id="resultado"></h4>
         <script src="script.js"></script>
     </body>
