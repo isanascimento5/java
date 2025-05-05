@@ -26,12 +26,19 @@ function calcularPreco() {
         return; //encerrar a execução
     }
 
+
     const precoTotal = precos[produto] * quantidade; //acessando a posção e calculando preço
 
     document.getElementById('resultado').innerText = `Total: R$ ${precoTotal.toFixed(2)}`; //acessando h4 e alterando valor
 
+    
+
+
 estoque[produto] -= quantidade; //retira a qtd do estoque
+
 
     document.getElementById("estoque").value = estoque[produto];//acessae o campo de texto e alterar seu valor 
     
+
+
 }
