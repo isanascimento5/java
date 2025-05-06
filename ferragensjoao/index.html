@@ -1,38 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+<html lang="pt-br">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Ferragens</title>
+  <link rel="stylesheet" href="style.css">
+
 </head>
-
 <body>
-    <body>
-        <h1>BEM VINDO À JOÃO FERRAGENS</h1>
-        
-        <label for="produto">Produto:</label>
-        <select id="produto">
-            <option value="">Selecione o produto</option>
-            <option value="parafuso">Parafuso</option>
-            <option value="martelo">Martelo</option>
-            <option value="chave de fenda">Chave de Fenda</option>
-        </select><br><br>
-    
-        <label for="quantidade">Quantidade:</label>
-        <input type="number" id="quantidade" min="1" placeholder="Quantidade" required><br><br>
-    
-        <label for="estoque">Estoque:</label>
 
-        <input type="number" id="estoque" value="0" readonly><br><br>
+  <header>
+    <h1>BEM VINDO À JOÃO FERRAGENS</h1>
+  </header>
 
-        <button onclick="calcularPreco()">comprar</button>
+  <main>
+    <form onsubmit="event.preventDefault(); calcularPreco();">
+      <label for="produto">Produto:</label>
+      <select id="produto" required>
+        <option value="">Selecione o produto</option>
+        <option value="parafuso">Parafuso</option>
+        <option value="martelo">Martelo</option>
+        <option value="chave de fenda">Chave de Fenda</option>
+      </select><br><br>
 
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" min="1" placeholder="Quantidade" required><br><br>
 
-      
-    
+      <label for="estoque">Estoque:</label>
+      <input type="number" id="estoque" value="0" readonly><br><br>
 
-        <h4 id="resultado"></h4>
-        <script src="script.js"></script>
-    </body>
+      <button type="submit">Comprar</button>
+    </form>
+
+    <h4 id="resultado"></h4>
+  </main>
+
+  <footer>
+    &copy; 2025 João Ferragens
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
 </html>
