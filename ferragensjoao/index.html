@@ -33,7 +33,30 @@
     </form>
 
     <h4 id="resultado"></h4>
+
   </main>
+
+  <section class="sessao-estoque">
+    <form onsubmit="event.preventDefault(); calcularPreco();">
+      <label for="sessao-estoque">Sessao-estoque:</label>
+      <select id="sessao-estoque" required>
+        <option value="">Selecione o produto</option>
+        <option value="parafuso">Parafuso</option>
+        <option value="martelo">Martelo</option>
+        <option value="chave de fenda">Chave de Fenda</option>
+      </select><br><br>
+
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" min="1" placeholder="Quantidade" required><br><br>
+
+      <label for="estoque">Disponivel no stoque:</label>
+      <input type="number" id="estoque" value="1000" readonly><br><br>
+
+      <button type="submit">Adicionar ao estoque</button>
+    </form>
+
+    <h4 id="resultado"></h4>
+  </section>
 
   <footer>
     &copy; 2025 João Ferragens
